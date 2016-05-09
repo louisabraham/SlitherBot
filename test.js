@@ -48,22 +48,22 @@ function loadSos(c) {
                 1 == b) {
                 if (0 == h)
                     y.push(q),
-                4 == y.length && h++;
+                    4 == y.length && h++;
                 else if (1 == h)
                     F.push(q),
-                3 == F.length && h++;
+                    3 == F.length && h++;
                 else if (2 == h)
                     t.push(q),
-                3 == t.length && h++;
+                    3 == t.length && h++;
                 else if (3 == h && (w.push(q),
-                    1 == w.length)) {
+                        1 == w.length)) {
                     b = {};
                     for (h = x = 0; h < F.length; h++)
                         x *= 256,
-                    x += F[h];
+                        x += F[h];
                     for (h = F = 0; h < t.length; h++)
                         F *= 256,
-                    F += t[h];
+                        F += t[h];
                     b.ip = y.join(".");
                     b.po = x;
                     b.ac = F;
@@ -167,7 +167,7 @@ function resetGame() {
     lagging = wfpr = playing = connected = !1;
     for (j = vfc - 1; 0 <= j; j--)
         fvxs[j] = 0,
-    fvys[j] = 0;
+        fvys[j] = 0;
     fvy = fvx = fvtg = 0;
     lag_mult = 1;
     cptm = 0;
@@ -313,10 +313,10 @@ var oef = function() {
                 h = Math.PI);
             for (var q = 0; 256 >= q; q++)
                 b = 32 + 5 * Math.cos(h + lsfr / 6 + 8 * q / 256) + 8 * q / 256,
-            256 == q && (b += 10),
-            xx = 64 + Math.cos(h + lsfr / 44 + .8 * Math.PI * q / 256) * b * 1.25,
-            yy = 64 + Math.sin(h + lsfr / 44 + .8 * Math.PI * q / 256) * b,
-            0 == q ? f.moveTo(xx, yy) : f.lineTo(xx, yy);
+                256 == q && (b += 10),
+                xx = 64 + Math.cos(h + lsfr / 44 + .8 * Math.PI * q / 256) * b * 1.25,
+                yy = 64 + Math.sin(h + lsfr / 44 + .8 * Math.PI * q / 256) * b,
+                0 == q ? f.moveTo(xx, yy) : f.lineTo(xx, yy);
             b = 32;
             xx = 64 + Math.cos(h + lsfr / 44 + .8 * Math.PI * (q + 47) / 256) * b * 1.25;
             yy = 64 + Math.sin(h + lsfr / 44 + .8 * Math.PI * (q + 47) / 256) * b;
@@ -324,10 +324,10 @@ var oef = function() {
             for (q = 256; 0 <= q; q--)
                 b = 32 + 5 * Math.cos(h + lsfr / 6 +
                     8 * q / 256) - 8 * q / 256,
-            256 == q && (b -= 10),
-            xx = 64 + Math.cos(h + lsfr / 44 + .8 * Math.PI * q / 256) * b * 1.25,
-            yy = 64 + Math.sin(h + lsfr / 44 + .8 * Math.PI * q / 256) * b,
-            f.lineTo(xx, yy);
+                256 == q && (b -= 10),
+                xx = 64 + Math.cos(h + lsfr / 44 + .8 * Math.PI * q / 256) * b * 1.25,
+                yy = 64 + Math.sin(h + lsfr / 44 + .8 * Math.PI * q / 256) * b,
+                f.lineTo(xx, yy);
             f.fill()
         }
         connecting ? (ss_a += avfr / 86,
@@ -361,7 +361,7 @@ var oef = function() {
             for (e = snakes[q],
                 x = e.pts.length - 1; 0 <= x; x--)
                 e.pts[x].yy =
-                    grd / 2 + 15 * Math.cos(x / 4 + fr / 19) * (1 - x / e.pts.length);
+                grd / 2 + 15 * Math.cos(x / 4 + fr / 19) * (1 - x / e.pts.length);
         view_xx -= vfr
     }
     playing && (high_quality ? (1 > gla && (gla += .0075 * vfr,
@@ -406,7 +406,7 @@ var oef = function() {
             1 <= lb_fr && (lb_fr = 1)
             // ,lbh.style.opacity = .85 * lb_fr,
             // lbs.style.opacity = lbn.style.opacity = lbp.style.opacity = lbf.style.opacity = vcm.style.opacity = lb_fr
-    );
+        );
     else if (1600 < c - dead_mtm) {
         if (-1 == login_iv) {
             login_iv = -2;
@@ -424,42 +424,42 @@ var oef = function() {
             want_victory_focus && (want_victory_focus = !1,
                 victory.focus())
         } -
-            2 == login_iv && (login_fr -= .004 * vfr,
-                choosing_skin && (login_fr -= .007 * vfr),
-                lb_fr = login_fr,
-                0 >= login_fr && (login_fr = 0,
-                    dead_mtm = -1,
-                    nick.disabled = !1,
-                    nick.focus(),
-                    lb_fr = -1,
-                    playing = !1,
-                    choosing_skin && (choosing_skin = !1,
-                        resetGame(),
-                        pskh.style.display = "none",
-                        nskh.style.display = "none",
-                        skodiv.style.display = "none")),
-                pbdiv.style.opacity = 1 - .5 * Math.max(0, Math.min(1, 6 *
-                    login_fr)),
-                lgcsc = 1 + .1 * Math.pow(login_fr, 2),
-                q = Math.round(lgbsc * lgcsc * 1E5) / 1E5,
-                1 == q ? trf(login, "") : trf(login, "scale(" + q + "," + q + ")"),
-                login.style.opacity = 1 - login_fr,
-                cstx.style.opacity = 1 - login_fr,
-                fbh.style.opacity = 1 - login_fr,
-                twth.style.opacity = 1 - login_fr,
-                cskh.style.opacity = 1 - login_fr,
-                grqh.style.opacity = 1 - login_fr,
-                plq.style.opacity = 1 - login_fr,
-                clq.style.opacity = 1 - login_fr,
-                social.style.opacity = 1 - login_fr,
-                pskh.style.opacity = login_fr,
-                nskh.style.opacity = login_fr,
-                skodiv.style.opacity = login_fr,
-                mc.style.opacity =
-                login_fr,
-                loch.style.opacity = login_fr,
-                lbh.style.opacity = .85 * lb_fr,
-                lbs.style.opacity = lbn.style.opacity = lbp.style.opacity = lbf.style.opacity = vcm.style.opacity = lb_fr)
+        2 == login_iv && (login_fr -= .004 * vfr,
+            choosing_skin && (login_fr -= .007 * vfr),
+            lb_fr = login_fr,
+            0 >= login_fr && (login_fr = 0,
+                dead_mtm = -1,
+                nick.disabled = !1,
+                nick.focus(),
+                lb_fr = -1,
+                playing = !1,
+                choosing_skin && (choosing_skin = !1,
+                    resetGame(),
+                    pskh.style.display = "none",
+                    nskh.style.display = "none",
+                    skodiv.style.display = "none")),
+            pbdiv.style.opacity = 1 - .5 * Math.max(0, Math.min(1, 6 *
+                login_fr)),
+            lgcsc = 1 + .1 * Math.pow(login_fr, 2),
+            q = Math.round(lgbsc * lgcsc * 1E5) / 1E5,
+            1 == q ? trf(login, "") : trf(login, "scale(" + q + "," + q + ")"),
+            login.style.opacity = 1 - login_fr,
+            cstx.style.opacity = 1 - login_fr,
+            fbh.style.opacity = 1 - login_fr,
+            twth.style.opacity = 1 - login_fr,
+            cskh.style.opacity = 1 - login_fr,
+            grqh.style.opacity = 1 - login_fr,
+            plq.style.opacity = 1 - login_fr,
+            clq.style.opacity = 1 - login_fr,
+            social.style.opacity = 1 - login_fr,
+            pskh.style.opacity = login_fr,
+            nskh.style.opacity = login_fr,
+            skodiv.style.opacity = login_fr,
+            mc.style.opacity =
+            login_fr,
+            loch.style.opacity = login_fr,
+            lbh.style.opacity = .85 * lb_fr,
+            lbs.style.opacity = lbn.style.opacity = lbp.style.opacity = lbf.style.opacity = vcm.style.opacity = lb_fr)
     }
     want_close_socket && -1 == dead_mtm && (want_close_socket = !1,
         ws && (ws.close(),
@@ -593,9 +593,9 @@ var oef = function() {
                         e.fltg -= h,
                         qq = 0; qq < h; qq++)
                         e.fl = e.fls[e.flpos],
-                e.fls[e.flpos] = 0,
-                e.flpos++,
-                e.flpos >= lfc && (e.flpos = 0);
+                        e.fls[e.flpos] = 0,
+                        e.flpos++,
+                        e.flpos >= lfc && (e.flpos = 0);
                 else
                     0 == e.fltg && (e.fltg = -1,
                         e.fl = 0);
@@ -661,24 +661,24 @@ var oef = function() {
             if (0 < vfrb) {
                 for (x = e.pts.length - 1; 0 <= x; x--)
                     f = e.pts[x],
-                f.dying && (f.da += .0015 * vfrb,
-                    1 < f.da && (e.pts.splice(x, 1),
-                        f.dying = !1,
-                        points_dp.add(f)));
+                    f.dying && (f.da += .0015 * vfrb,
+                        1 < f.da && (e.pts.splice(x, 1),
+                            f.dying = !1,
+                            points_dp.add(f)));
                 for (x = e.pts.length - 1; 0 <= x; x--)
                     if (f = e.pts[x],
                         0 < f.eiu) {
                         fy = fx = 0;
                         for (qq = cm1 = f.eiu - 1; 0 <= qq; qq--)
                             f.efs[qq] = 2 == f.ems[qq] ? f.efs[qq] + vfrb2 : f.efs[qq] + vfrb,
-                        h = f.efs[qq],
-                        h >= hfc ? (qq != cm1 && (f.exs[qq] = f.exs[cm1],
-                                f.eys[qq] = f.eys[cm1],
-                                f.efs[qq] = f.efs[cm1],
-                                f.ems[qq] = f.ems[cm1]),
-                            f.eiu--,
-                            cm1--) : (fx += f.exs[qq] * hfas[h],
-                            fy += f.eys[qq] * hfas[h]);
+                            h = f.efs[qq],
+                            h >= hfc ? (qq != cm1 && (f.exs[qq] = f.exs[cm1],
+                                    f.eys[qq] = f.eys[cm1],
+                                    f.efs[qq] = f.efs[cm1],
+                                    f.ems[qq] = f.ems[cm1]),
+                                f.eiu--,
+                                cm1--) : (fx += f.exs[qq] * hfas[h],
+                                fy += f.eys[qq] * hfas[h]);
                         f.fx = fx;
                         f.fy = fy
                     }
@@ -701,13 +701,13 @@ var oef = function() {
                         e.ftg -= h,
                         qq = 0; qq < h; qq++)
                         e.fx = e.fxs[e.fpos],
-                e.fy = e.fys[e.fpos],
-                e.fchl = e.fchls[e.fpos],
-                e.fxs[e.fpos] = 0,
-                e.fys[e.fpos] = 0,
-                e.fchls[e.fpos] = 0,
-                e.fpos++,
-                e.fpos >= rfc && (e.fpos = 0);
+                        e.fy = e.fys[e.fpos],
+                        e.fchl = e.fchls[e.fpos],
+                        e.fxs[e.fpos] = 0,
+                        e.fys[e.fpos] = 0,
+                        e.fchls[e.fpos] = 0,
+                        e.fpos++,
+                        e.fpos >= rfc && (e.fpos = 0);
                 else
                     0 == e.ftg && (e.ftg = -1,
                         e.fx = 0,
@@ -720,9 +720,9 @@ var oef = function() {
                         e.fatg -= h,
                         qq = 0; qq < h; qq++)
                         e.fa = e.fas[e.fapos],
-                e.fas[e.fapos] = 0,
-                e.fapos++,
-                e.fapos >= afc && (e.fapos = 0);
+                        e.fas[e.fapos] = 0,
+                        e.fapos++,
+                        e.fapos >= afc && (e.fapos = 0);
                 else
                     0 == e.fatg && (e.fatg = -1,
                         e.fa = 0)
@@ -743,15 +743,15 @@ var oef = function() {
                     qq = 1; qq <= h; qq++)
                     qq == h && (x.fx = x.fxs[x.fpos],
                         x.fy = x.fys[x.fpos]),
-        x.fxs[x.fpos] = 0,
-        x.fys[x.fpos] =
-            0,
-        x.fpos++,
-        x.fpos >= rfc && (x.fpos = 0);
-        else
-            0 == x.ftg && (x.fx = 0,
-                x.fy = 0,
-                x.ftg = -1);
+                    x.fxs[x.fpos] = 0,
+                    x.fys[x.fpos] =
+                    0,
+                    x.fpos++,
+                    x.fpos >= rfc && (x.fpos = 0);
+            else
+                0 == x.ftg && (x.fx = 0,
+                    x.fy = 0,
+                    x.ftg = -1);
         if (1 == x.dir) {
             x.ang -= f;
             if (0 > x.ang || x.ang >= pi2)
@@ -790,29 +790,29 @@ var oef = function() {
     }
     for (q = cm1 = foods_c - 1; 0 <= q; q--)
         c = foods[q],
-    c.gfr += vfr * c.gr,
-    c.eaten ? (c.eaten_fr += vfr / 41,
-        e = c.eaten_by,
-        1 <= c.eaten_fr || !e ? (q == cm1 ? foods[q] = null : (foods[q] = foods[cm1],
-                foods[cm1] = null),
-            foods_c--,
-            cm1--) : (e = c.eaten_by,
-            h = c.eaten_fr *
-            c.eaten_fr,
-            c.rad = c.lrrad * (1 - c.eaten_fr * h),
-            c.rx = c.xx + (e.xx + e.fx + Math.cos(e.ang + e.fa) * (43 - 24 * h) * (1 - h) - c.xx) * h,
-            c.ry = c.yy + (e.yy + e.fy + Math.sin(e.ang + e.fa) * (43 - 24 * h) * (1 - h) - c.yy) * h,
-            c.rx += 6 * Math.cos(c.wsp * c.gfr) * (1 - c.eaten_fr),
-            c.ry += 6 * Math.sin(c.wsp * c.gfr) * (1 - c.eaten_fr))) : (1 != c.fr && (c.fr += c.rsp * vfr / 150,
-            1 <= c.fr ? (c.fr = 1,
-                c.rad = 1) : (c.rad = .5 * (1 - Math.cos(Math.PI * c.fr)),
-                c.rad += .66 * (.5 * (1 - Math.cos(Math.PI * c.rad)) - c.rad)),
-            c.lrrad = c.rad),
-        c.rx = c.xx,
-        c.ry = c.yy,
-        c.rx = c.xx + 6 * Math.cos(c.wsp * c.gfr),
-        c.ry = c.yy + 6 * Math.sin(c.wsp *
-            c.gfr));
+        c.gfr += vfr * c.gr,
+        c.eaten ? (c.eaten_fr += vfr / 41,
+            e = c.eaten_by,
+            1 <= c.eaten_fr || !e ? (q == cm1 ? foods[q] = null : (foods[q] = foods[cm1],
+                    foods[cm1] = null),
+                foods_c--,
+                cm1--) : (e = c.eaten_by,
+                h = c.eaten_fr *
+                c.eaten_fr,
+                c.rad = c.lrrad * (1 - c.eaten_fr * h),
+                c.rx = c.xx + (e.xx + e.fx + Math.cos(e.ang + e.fa) * (43 - 24 * h) * (1 - h) - c.xx) * h,
+                c.ry = c.yy + (e.yy + e.fy + Math.sin(e.ang + e.fa) * (43 - 24 * h) * (1 - h) - c.yy) * h,
+                c.rx += 6 * Math.cos(c.wsp * c.gfr) * (1 - c.eaten_fr),
+                c.ry += 6 * Math.sin(c.wsp * c.gfr) * (1 - c.eaten_fr))) : (1 != c.fr && (c.fr += c.rsp * vfr / 150,
+                1 <= c.fr ? (c.fr = 1,
+                    c.rad = 1) : (c.rad = .5 * (1 - Math.cos(Math.PI * c.fr)),
+                    c.rad += .66 * (.5 * (1 - Math.cos(Math.PI * c.rad)) - c.rad)),
+                c.lrrad = c.rad),
+            c.rx = c.xx,
+            c.ry = c.yy,
+            c.rx = c.xx + 6 * Math.cos(c.wsp * c.gfr),
+            c.ry = c.yy + 6 * Math.sin(c.wsp *
+                c.gfr));
     vfrb = vfr = 0;
     // redraw();
     no_raf || raf(oef)
@@ -866,8 +866,8 @@ function connect() {
         ws.onmessage = function(c) {
             console.log('caca123');
             if (ws == this && (c = new Uint8Array(c.data),
-                rdps += c.length,
-                2 <= c.length)) {
+                    rdps += c.length,
+                    2 <= c.length)) {
                 lptm = cptm;
                 cptm = Date.now();
                 var b = c[0] << 8 | c[1],
@@ -882,42 +882,42 @@ function connect() {
                     t = c.length - 3;
                 if ("a" == h)
                     console.log('caca'),
-                connecting = !1,
-                playing = connected = !0,
-                play_btn_click_mtm = -1,
-                grd = c[b] << 16 | c[b + 1] << 8 | c[b + 2],
-                b += 3,
-                e = c[b] << 8 | c[b + 1],
-                b += 2,
-                sector_size = c[b] << 8 | c[b + 1],
-                b += 2,
-                sector_count_along_edge = c[b] << 8 | c[b + 1],
-                b += 2,
-                spangdv =
+                    connecting = !1,
+                    playing = connected = !0,
+                    play_btn_click_mtm = -1,
+                    grd = c[b] << 16 | c[b + 1] << 8 | c[b + 2],
+                    b += 3,
+                    e = c[b] << 8 | c[b + 1],
+                    b += 2,
+                    sector_size = c[b] << 8 | c[b + 1],
+                    b += 2,
+                    sector_count_along_edge = c[b] << 8 | c[b + 1],
+                    b += 2,
+                    spangdv =
                     c[b] / 10,
-                b++,
-                nsp1 = (c[b] << 8 | c[b + 1]) / 100,
-                b += 2,
-                nsp2 = (c[b] << 8 | c[b + 1]) / 100,
-                b += 2,
-                nsp3 = (c[b] << 8 | c[b + 1]) / 100,
-                b += 2,
-                mamu = (c[b] << 8 | c[b + 1]) / 1E3,
-                b += 2,
-                mamu2 = (c[b] << 8 | c[b + 1]) / 1E3,
-                b += 2,
-                cst = (c[b] << 8 | c[b + 1]) / 1E3,
-                b += 2,
-                b < f && (protocol_version = c[b]),
-                setMscps(e),
-                lbh.style.display = "inline",
-                lbs.style.display = "inline",
-                lbn.style.display = "inline",
-                lbp.style.display = "inline",
-                lbf.style.display = "inline",
-                vcm.style.display = "inline",
-                loch.style.display = "inline",
-                startShowGame();
+                    b++,
+                    nsp1 = (c[b] << 8 | c[b + 1]) / 100,
+                    b += 2,
+                    nsp2 = (c[b] << 8 | c[b + 1]) / 100,
+                    b += 2,
+                    nsp3 = (c[b] << 8 | c[b + 1]) / 100,
+                    b += 2,
+                    mamu = (c[b] << 8 | c[b + 1]) / 1E3,
+                    b += 2,
+                    mamu2 = (c[b] << 8 | c[b + 1]) / 1E3,
+                    b += 2,
+                    cst = (c[b] << 8 | c[b + 1]) / 1E3,
+                    b += 2,
+                    b < f && (protocol_version = c[b]),
+                    setMscps(e),
+                    lbh.style.display = "inline",
+                    lbs.style.display = "inline",
+                    lbn.style.display = "inline",
+                    lbp.style.display = "inline",
+                    lbf.style.display = "inline",
+                    vcm.style.display = "inline",
+                    loch.style.display = "inline",
+                    startShowGame();
                 else if ("e" == h || "E" == h || "3" == h || "4" == h || "5" == h) {
                     var w = c[b] <<
                         8 | c[b + 1],
@@ -954,23 +954,23 @@ function connect() {
                         "3" != h && (8 == e || 7 == e || 6 == e && "3" != h || 5 == e && "3" != h) && (z = "e" == h ? 1 : 2);
                         if (8 == e || 7 == e || 5 == e && "3" == h || 6 == e && "3" == h)
                             E = 2 * (c[b] << 8 | c[b + 1]) * Math.PI / 65535,
-                        b += 2;
+                            b += 2;
                         if (8 == e || 7 == e || 5 == e && "3" != h || 6 == e && "3" != h)
                             u = 2 * (c[b] << 8 | c[b + 1]) * Math.PI / 65535,
-                        b += 2;
+                            b += 2;
                         if (8 == e || 6 == e || 4 == e)
                             A = c[b] / 18
                     } else {
                         if (11 == t || 8 == t || 9 == t || 6 == t)
                             z = c[b] - 48,
-                        b++;
+                            b++;
                         if (11 == t || 7 == t || 9 == t || 5 == t)
                             E = 2 * (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) * Math.PI / 16777215,
-                        b += 3;
+                            b += 3;
                         if (11 == t || 8 == t || 9 == t || 6 == t)
                             u = 2 * (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) * Math.PI /
-                                16777215,
-                        b += 3;
+                            16777215,
+                            b += 3;
                         if (11 == t || 7 == t || 8 == t || 4 == t)
                             A = (c[b] << 8 | c[b + 1]) / 1E3
                     }
@@ -985,17 +985,17 @@ function connect() {
                             w = f.fapos;
                             for (t = 0; t < afc; t++)
                                 f.fas[w] -= c * afas[t],
-                            w++,
-                            w >= afc && (w = 0);
+                                w++,
+                                w >= afc && (w = 0);
                             f.fatg = afc;
                             f.ang = E
                         } -
-                            1 != u && (f.wang == u && wangnuc++,
-                                f.wang = u,
-                                f != snake && (f.eang = u)); -
-                            1 != A && (f.sp = A,
-                                f.spang = f.sp / spangdv,
-                                1 < f.spang && (f.spang = 1))
+                        1 != u && (f.wang == u && wangnuc++,
+                            f.wang = u,
+                            f != snake && (f.eang = u)); -
+                        1 != A && (f.sp = A,
+                            f.spang = f.sp / spangdv,
+                            1 < f.spang && (f.spang = 1))
                     }
                 } else if ("h" == h) {
                     var w = c[b] << 8 | c[b + 1],
@@ -1003,7 +1003,7 @@ function connect() {
                         B = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 16777215;
                     if (f = os["s" + w])
                         f.fam = B,
-                    snl(f)
+                        snl(f)
                 } else if ("r" ==
                     h) {
                     if (w = c[b] << 8 | c[b + 1],
@@ -1027,9 +1027,9 @@ function connect() {
                     }
                 } else if ("g" == h || "n" == h || "G" == h || "N" == h) {
                     if (playing && (B = "n" == h || "N" == h,
-                        w = c[b] << 8 | c[b + 1],
-                        b += 2,
-                        f = os["s" + w])) {
+                            w = c[b] << 8 | c[b + 1],
+                            b += 2,
+                            f = os["s" + w])) {
                         if (B)
                             f.sct++;
                         else
@@ -1083,22 +1083,22 @@ function connect() {
                                 h = n = 0,
                                 t = w - 1; 0 <= t; t--)
                                 w = f.pts[t],
-                        n++,
-                        c = w.xx,
-                        b = w.yy,
-                        4 >= n && (h = cst * n / 4),
-                        w.xx += (E.xx - w.xx) * h,
-                        w.yy += (E.yy - w.yy) * h,
-                        f.iiv && (c -= w.xx,
-                            b -= w.yy,
-                            w.fx += c,
-                            w.fy += b,
-                            w.exs[w.eiu] = c,
-                            w.eys[w.eiu] = b,
-                            w.efs[w.eiu] = 0,
-                            w.ems[w.eiu] = 2,
-                            w.eiu++),
-                        E = w;
+                                n++,
+                                c = w.xx,
+                                b = w.yy,
+                                4 >= n && (h = cst * n / 4),
+                                w.xx += (E.xx - w.xx) * h,
+                                w.yy += (E.yy - w.yy) * h,
+                                f.iiv && (c -= w.xx,
+                                    b -= w.yy,
+                                    w.fx += c,
+                                    w.fy += b,
+                                    w.exs[w.eiu] = c,
+                                    w.eys[w.eiu] = b,
+                                    w.efs[w.eiu] = 0,
+                                    w.ems[w.eiu] = 2,
+                                    w.eiu++),
+                                E = w;
                         f.sc = Math.min(6, 1 + (f.sct - 2) / 106);
                         f.scang = .13 + .87 * Math.pow((7 - f.sc) / 6, 2);
                         f.ssp = nsp1 + nsp2 * f.sc;
@@ -1125,10 +1125,10 @@ function connect() {
                         w = f.fpos;
                         for (t = 0; t < rfc; t++)
                             f.fxs[w] -= c * rfas[t],
-                        f.fys[w] -= b * rfas[t],
-                        f.fchls[w] -= e * rfas[t],
-                        w++,
-                        w >= rfc && (w = 0);
+                            f.fys[w] -= b * rfas[t],
+                            f.fchls[w] -= e * rfas[t],
+                            w++,
+                            w >= rfc && (w = 0);
                         f.fx = f.fxs[f.fpos];
                         f.fy = f.fys[f.fpos];
                         f.fchl = f.fchls[f.fpos];
@@ -1142,10 +1142,10 @@ function connect() {
                             w = fvpos;
                             for (t = 0; t < vfc; t++)
                                 fvxs[w] -=
-                                    c * vfas[t],
-                            fvys[w] -= b * vfas[t],
-                            w++,
-                            w >= vfc && (w = 0);
+                                c * vfas[t],
+                                fvys[w] -= b * vfas[t],
+                                w++,
+                                w >= vfc && (w = 0);
                             fvtg = vfc
                         }
                     }
@@ -1154,7 +1154,7 @@ function connect() {
                         wumsts = !0;
                         E = z = C = "";
                         A = u = 0; -
-                            1 == lb_fr && -1 == dead_mtm && (lb_fr = 0);
+                        1 == lb_fr && -1 == dead_mtm && (lb_fr = 0);
                         var L = c[b];
                         b++;
                         rank = c[b] << 8 | c[b + 1];
@@ -1175,13 +1175,13 @@ function connect() {
                             h = "";
                             for (t = 0; t < e; t++)
                                 w = c[b],
-                            h += String.fromCharCode(w),
-                            b++;
+                                h += String.fromCharCode(w),
+                                b++;
                             A != L && (gdnm(h) ||
                                 (h = ""));
                             for (var K = "", t = 0; t < e; t++)
                                 w = h.charCodeAt(t),
-                            K = 38 == w ? K + "&amp;" : 60 == w ? K + "&lt;" : 62 == w ? K + "&gt;" : 32 == w ? K + "&nbsp;" : K + String.fromCharCode(w);
+                                K = 38 == w ? K + "&amp;" : 60 == w ? K + "&lt;" : 62 == w ? K + "&gt;" : 32 == w ? K + "&nbsp;" : K + String.fromCharCode(w);
                             h = K;
                             u++;
                             score = Math.floor(150 * (fpsls[H] + B / fmlts[H] - 1) - 50) / 10;
@@ -1223,12 +1223,12 @@ function connect() {
                             save_btn.setEnabled(!0)) : want_close_socket = !0);
                 else if ("W" == h)
                     e = c[b],
-                b++,
-                C = c[b],
-                f = {},
-                f.xx = e,
-                f.yy = C,
-                sectors.push(f);
+                    b++,
+                    C = c[b],
+                    f = {},
+                    f.xx = e,
+                    f.yy = C,
+                    sectors.push(f);
                 else if ("w" == h)
                     if (8 <= protocol_version ? (f = 2,
                             e = c[b],
@@ -1240,21 +1240,22 @@ function connect() {
                             C = c[b] << 8 | c[b + 1]),
                         1 == f)
                         f = {},
-                f.xx = e,
-                f.yy = C,
-                sectors.push(f);
-                else {
-                    for (D = cm1 = foods_c - 1; 0 <= D; D--)
-                        t = foods[D],
-                    t.sx == e && t.sy == C && (D == cm1 ? foods[D] = null : (foods[D] = foods[cm1],
-                            foods[cm1] = null),
-                        foods_c--,
-                        cm1--);
-                    for (D = sectors.length - 1; 0 <= D; D--)
-                        f = sectors[D],
-                    f.xx ==
-                        e && f.yy == C && sectors.splice(D, 1)
-                } else if ("m" == h) {
+                        f.xx = e,
+                        f.yy = C,
+                        sectors.push(f);
+                    else {
+                        for (D = cm1 = foods_c - 1; 0 <= D; D--)
+                            t = foods[D],
+                            t.sx == e && t.sy == C && (D == cm1 ? foods[D] = null : (foods[D] = foods[cm1],
+                                    foods[cm1] = null),
+                                foods_c--,
+                                cm1--);
+                        for (D = sectors.length - 1; 0 <= D; D--)
+                            f = sectors[D],
+                            f.xx ==
+                            e && f.yy == C && sectors.splice(D, 1)
+                    }
+                else if ("m" == h) {
                     H = c[b] << 16 | c[b + 1] << 8 | c[b + 2];
                     b += 3;
                     B = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 16777215;
@@ -1265,10 +1266,10 @@ function connect() {
                     t = "";
                     for (D = 0; D < e; D++)
                         t += String.fromCharCode(c[b]),
-                    b++;
+                        b++;
                     for (e = ""; b < f;)
                         e += String.fromCharCode(c[b]),
-                    b++;
+                        b++;
                     t = t.split("&").join("&amp;").split("<").join("&lt;").split(">").join("&gt;");
                     e = e.split("&").join("&amp;").split("<").join("&lt;").split(">").join("&gt;");
                     0 < C && (c = "",
@@ -1280,14 +1281,14 @@ function connect() {
                         vcm.innerHTML = c)
                 } else if ("p" == h)
                     wfpr = !1,
-                lagging && (etm *= lag_mult,
-                    lagging = !1);
+                    lagging && (etm *= lag_mult,
+                        lagging = !1);
                 else if ("u" == h) {
                     t = asmc.getContext("2d");
                     t.clearRect(0, 0, 80, 80);
                     t.fillStyle = "#FFFFFF";
                     for (var C =
-                        e = 0; b < f && !(80 <= C);)
+                            e = 0; b < f && !(80 <= C);)
                         if (w = c[b++],
                             128 <= w)
                             for (w -= 128,
@@ -1298,10 +1299,10 @@ function connect() {
                         ;
                         else
                             for (D = 0; 7 > D && !(0 < (w & u_m[D]) && t.fillRect(e, C, 1, 1),
-                                e++,
-                                80 <= e && (e = 0,
-                                    C++,
-                                    80 <= C)); D++)
+                                    e++,
+                                    80 <= e && (e = 0,
+                                        C++,
+                                        80 <= C)); D++)
                         ;
                 } else if ("s" == h) {
                     if (playing)
@@ -1330,34 +1331,34 @@ function connect() {
                             h = "";
                             for (t = 0; t < e; t++)
                                 h += String.fromCharCode(c[b]),
-                            b++;
+                                b++;
                             for (var J = t = C = e = 0, N = !1; b < f;)
                                 t = e,
-                            J = C,
-                            N ? (e += (c[b] - 127) / 2,
-                                b++,
-                                C += (c[b] - 127) / 2,
-                                b++) : (e = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
-                                b += 3,
-                                C = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
-                                b += 3,
-                                t = e,
                                 J = C,
-                                N = !0), (z = points_dp.get()) || (z = {
-                                exs: [],
-                                eys: [],
-                                efs: [],
-                                ems: []
-                            }),
-                            z.eiu = 0,
-                            z.xx = e,
-                            z.yy = C,
-                            z.fx = 0,
-                            z.fy = 0,
-                            z.da = 0,
-                            z.ebx = e - t,
-                            z.eby = C - J,
-                            L.push(z);
+                                N ? (e += (c[b] - 127) / 2,
+                                    b++,
+                                    C += (c[b] - 127) / 2,
+                                    b++) : (e = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
+                                    b += 3,
+                                    C = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
+                                    b += 3,
+                                    t = e,
+                                    J = C,
+                                    N = !0), (z = points_dp.get()) || (z = {
+                                    exs: [],
+                                    eys: [],
+                                    efs: [],
+                                    ems: []
+                                }),
+                                z.eiu = 0,
+                                z.xx = e,
+                                z.yy = C,
+                                z.fx = 0,
+                                z.fy = 0,
+                                z.da = 0,
+                                z.ebx = e - t,
+                                z.eby = C - J,
+                                L.push(z);
                             f = newSnake(w, H, K, D, E, L);
                             null == snake ? (view_xx = e,
                                 view_yy = C,
@@ -1395,39 +1396,39 @@ function connect() {
                     if (4 <= protocol_version)
                         for (h = !1; b < f;)
                             D = c[b],
-                b++,
-                e =
-                    c[b] << 8 | c[b + 1],
-                b += 2,
-                C = c[b] << 8 | c[b + 1],
-                b += 2,
-                t = c[b] / 5,
-                b++,
-                w = C * grd * 3 + e,
-                t = newFood(w, e, C, t, !0, D),
-                h || (h = !0,
-                    z = Math.floor(e / sector_size),
-                    B = Math.floor(C / sector_size)),
-                t.sx = z,
-                t.sy = B;
-                else
-                    for (z = c[b] << 8 | c[b + 1],
-                        b += 2,
-                        B = c[b] << 8 | c[b + 1],
-                        b += 2; b < f;)
-                        w = c[b] << 16 | c[b + 1] << 8 | c[b + 2],
-                b += 3,
-                D = c[b],
-                b++,
-                e = sector_size * (z + c[b] / 255),
-                b++,
-                C = sector_size * (B + c[b] / 255),
-                b++,
-                t = c[b] / 5,
-                b++,
-                t = newFood(w, e, C, t, !0, D),
-                t.sx = z,
-                t.sy = B;
+                            b++,
+                            e =
+                            c[b] << 8 | c[b + 1],
+                            b += 2,
+                            C = c[b] << 8 | c[b + 1],
+                            b += 2,
+                            t = c[b] / 5,
+                            b++,
+                            w = C * grd * 3 + e,
+                            t = newFood(w, e, C, t, !0, D),
+                            h || (h = !0,
+                                z = Math.floor(e / sector_size),
+                                B = Math.floor(C / sector_size)),
+                            t.sx = z,
+                            t.sy = B;
+                    else
+                        for (z = c[b] << 8 | c[b + 1],
+                            b += 2,
+                            B = c[b] << 8 | c[b + 1],
+                            b += 2; b < f;)
+                            w = c[b] << 16 | c[b + 1] << 8 | c[b + 2],
+                            b += 3,
+                            D = c[b],
+                            b++,
+                            e = sector_size * (z + c[b] / 255),
+                            b++,
+                            C = sector_size * (B + c[b] / 255),
+                            b++,
+                            t = c[b] / 5,
+                            b++,
+                            t = newFood(w, e, C, t, !0, D),
+                            t.sx = z,
+                            t.sy = B;
                 else if ("b" == h || "f" == h)
                     4 <= protocol_version ? (D = c[b],
                         b++,
@@ -1476,7 +1477,7 @@ function connect() {
                             w = -1;
                             break
                         } -
-                        1 != w && console.log("wtf")
+                    1 != w && console.log("wtf")
                 } else if ("j" == h) {
                     w = c[b] << 8 | c[b + 1];
                     b += 2;
@@ -1523,9 +1524,9 @@ function connect() {
                         w = f.fpos;
                         for (t = 0; t < rfc; t++)
                             f.fxs[w] -= c * rfas[t],
-                        f.fys[w] -= b * rfas[t],
-                        w++,
-                        w >= rfc && (w = 0);
+                            f.fys[w] -= b * rfas[t],
+                            w++,
+                            w >= rfc && (w = 0);
                         f.fx = f.fxs[f.fpos];
                         f.fy = f.fys[f.fpos];
                         f.ftg = rfc
@@ -1553,22 +1554,22 @@ function connect() {
                             break
                         }
                     } else
-                    D = c[b],
-                b++,
-                e = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
-                b += 3,
-                C = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
-                b += 3,
-                t = c[b] / 5,
-                b++,
-                z = c[b] - 48,
-                b++,
-                u = 2 * (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) * Math.PI / 16777215,
-                b += 3,
-                E = 2 * (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) * Math.PI / 16777215,
-                b += 3,
-                A = (c[b] << 8 | c[b + 1]) / 1E3,
-                newPrey(w, e, C, t, D, z, u, E, A)
+                        D = c[b],
+                        b++,
+                        e = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
+                        b += 3,
+                        C = (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) / 5,
+                        b += 3,
+                        t = c[b] / 5,
+                        b++,
+                        z = c[b] - 48,
+                        b++,
+                        u = 2 * (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) * Math.PI / 16777215,
+                        b += 3,
+                        E = 2 * (c[b] << 16 | c[b + 1] << 8 | c[b + 2]) * Math.PI / 16777215,
+                        b += 3,
+                        A = (c[b] << 8 | c[b + 1]) / 1E3,
+                        newPrey(w, e, C, t, D, z, u, E, A)
             }
         };
         ws.onerror = function(b) {};
@@ -1628,7 +1629,7 @@ function asciize(c) {
         x = "";
         for (f = 0; f < b; f++)
             h = c.charCodeAt(f),
-        x = 32 > h || 127 < h ? x + " " : x + String.fromCharCode(h);
+            x = 32 > h || 127 < h ? x + " " : x + String.fromCharCode(h);
         return x
     }
     return c
