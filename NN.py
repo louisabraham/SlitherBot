@@ -45,7 +45,7 @@ if __name__=='__main__':
     from itertools import product
     from time import time
     
-    MUT = 6
+    MUT = 5
 
     dbt= time()
 
