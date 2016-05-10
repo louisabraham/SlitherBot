@@ -38,4 +38,3 @@ def NN_reproduce(a, b, MUTATION_PARAM=MUTATION_PARAM):
     W = [reproduce(wa, wb, MUTATION_PARAM) for wa,wb in zip(a.W, b.W)]
     C = reproduce(a.C, b.C)
     return SimpleNN(W, C)
-    
