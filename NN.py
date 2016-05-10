@@ -14,7 +14,6 @@ def threshold(x):
     return x>0
 
 
-
 SimpleNN = namedtuple("SimpleNN", ['W', 'C'])
 
 def NN_new(layers):
