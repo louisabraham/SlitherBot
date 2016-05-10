@@ -1,5 +1,4 @@
 import numpy as np, numpy.random as rnd
-from itertools import islice
 from collections import namedtuple
 
 
